@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Manège enfantin",
+    "image": "img/locations/manege-enfants.webp",
+    "category": "Manèges"
+  },
+  {
+    "title": "Parcours enfant",
+    "image": "img/locations/showbot.webp",
+    "category": "Manèges"
+  },
+  {
+    "title": "Pêche aux canards",
+    "image": "img/locations/peche.webp",
+    "category": "Stands & jeux"
+  },
+  {
+    "title": "Coups de poing",
+    "image": "img/locations/poing.webp",
+    "category": "Stands & jeux"
+  },
+  {
+    "title": "Stand de barbe à papa",
+    "image": "img/locations/stand.webp",
+    "category": "Stands & jeux"
+  },
+  {
+    "title": "Bob l’éponge",
+    "image": "img/locations/bob.webp",
+    "category": "Structures gonflables",
+    "description": "Obstacles, parcours d’escalade et glissade à l’intérieur.",
+    "height": "3,7 m",
+    "width": "4,5 m",
+    "length": "9,50 m",
+    "capacity": 15,
+    "age": 2,
+    "price": 250
+  },
+  {
+    "title": "Parc enfant",
+    "image": "img/locations/jungle.webp",
+    "category": "Structures gonflables",
+    "height": "3 m",
+    "width": "4 m",
+    "length": "6,50 m",
+    "capacity": 15,
+    "age": 2,
+    "price": 250
+  },
+  {
+    "title": "Le lion",
+    "image": "img/locations/crocodile.webp",
+    "category": "Structures gonflables",
+    "capacity": 15,
+    "age": 3,
+    "price": 250
+  },
+  {
+    "title": "Glissade Mickey",
+    "image": "img/locations/chateau.webp",
+    "category": "Structures gonflables",
+    "description": "Course glissade.",
+    "capacity": 15,
+    "age": 3,
+    "price": 250
+  },
+  {
+    "title": "Train",
+    "image": "img/locations/train-catalogue.webp",
+    "category": "Structures gonflables",
+    "height": "3 m",
+    "width": "6 m",
+    "length": "21 m",
+    "capacity": 30,
+    "age": 3,
+    "price": 300
+  },
+  {
+    "title": "Glissade pirate",
+    "image": "img/locations/pirate.webp",
+    "category": "Structures gonflables",
+    "description": "Grand toboggan.",
+    "height": "4,50 m",
+    "width": "4,5 m",
+    "length": "7,50 m",
+    "capacity": 15,
+    "age": 2,
+    "price": 250
+  },
+  {
+    "title": "Gonflable safari",
+    "image": "img/locations/safari.webp",
+    "category": "Structures gonflables"
+  },
+  {
+    "title": "Gorille",
+    "image": "img/locations/train-parcours.webp",
+    "category": "Structures gonflables",
+    "description": "Course glissade.",
+    "capacity": 15,
+    "age": 3,
+    "price": 300
+  },
+  {
+    "title": "La vache",
+    "image": "img/locations/vache.webp",
+    "category": "Structures gonflables",
+    "height": "4,50 m",
+    "width": "4 m",
+    "length": "4,50 m",
+    "capacity": 15,
+    "age": 2,
+    "price": 250
+  },
+  {
+    "title": "Ventre glisse",
+    "image": "img/locations/ventre-glisse.webp",
+    "category": "Structures gonflables",
+    "description": "Course glissade.",
+    "capacity": 4,
+    "age": 4,
+    "price": 250
+  },
+  {
+    "title": "Le dôme",
+    "image": "",
+    "category": "Structures gonflables",
+    "description": "Course glissade.",
+    "capacity": 15,
+    "age": 3,
+    "price": 300
+  },
+  {
+    "title": "Château",
+    "image": "",
+    "category": "Structures gonflables",
+    "description": "Course glissade.",
+    "capacity": 15,
+    "age": 3,
+    "price": 150
+  },
+  {
+    "title": "Carrousel",
+    "image": "img/locations/carrousel-reel.webp",
+    "category": "Manèges"
+  },
+  {
+    "title": "La Chenille — Le Super Torrent",
+    "image": "img/locations/chenille.webp",
+    "category": "Manèges"
+  },
+  {
+    "title": "Autos tamponneuses",
+    "image": "img/locations/skooter.webp",
+    "category": "Manèges"
+  },
+  {
+    "title": "Voltigeur",
+    "image": "img/locations/voltigeur.webp",
+    "category": "Manèges"
+  }
+]

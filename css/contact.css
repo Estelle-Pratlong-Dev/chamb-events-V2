@@ -1,0 +1,228 @@
+/***************************************************************
+Formulaire et choix des animations
+***************************************************************/
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    color: var(--ink);
+    margin-top: 6px;
+    background: var(--white);
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    color: var(--ink);
+    margin-top: 6px;
+    background: var(--white);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    color: var(--ink);
+    margin-top: 6px;
+    background: var(--white);
+    resize: vertical;
+}
+
+.contact p {
+    color: var(--muted);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 70px;
+    padding-top: 65px;
+}
+
+.note {
+    font-size: 14px;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.selection-summary {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 15px 0 0;
+}
+
+.animation-choices details[open] summary {
+    color: var(--ink);
+}
+
+.animation-choices {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 15px 18px;
+    margin: 10px 0 22px;
+    min-width: 0;
+}
+
+.animation-choices legend {
+    font-weight: 700;
+    padding: 0 6px;
+}
+
+.animation-choices>p {
+    font-size: 14px;
+    margin: 0 0 8px;
+    color: var(--muted);
+}
+
+.animation-choices details {
+    padding: 12px 0;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 15px;
+    margin-top: 12px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.help-choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.checkbox-grid input {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 2px 0 0;
+    flex: 0 0 18px;
+    accent-color: var(--pink);
+}
+
+.help-choice input {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 2px 0 0;
+    flex: 0 0 18px;
+    accent-color: var(--pink);
+}
+
+.checkbox-grid label span {
+    overflow-wrap: anywhere;
+}
+
+.page-contact .contact {
+    padding-top: 25px;
+}
+
+/***************************************************************
+Questions fréquentes
+***************************************************************/
+
+.faq {
+    padding-bottom: 50px;
+    max-width: 900px;
+}
+
+.faq h2 {
+    margin-bottom: 23px;
+}
+
+/***************************************************************
+Adaptations : @media(max-width:1000px)
+***************************************************************/
+
+@media(max-width:1000px) {
+    .contact {
+        gap: 30px;
+    }
+
+}
+
+/***************************************************************
+Adaptations : @media(max-width:720px)
+***************************************************************/
+
+@media(max-width:720px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+.contact-details {
+        font-size: 16px;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+}
+
+/***************************************************************
+Adaptations : @media(max-width:400px)
+***************************************************************/
+
+@media(max-width:400px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/***************************************************************
+Hero de la page Contact
+***************************************************************/
+
+.page-contact .page-hero-image {
+    height: 270px;
+}

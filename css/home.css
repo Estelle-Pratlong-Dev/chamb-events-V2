@@ -1,0 +1,420 @@
+/***************************************************************
+Hero et liens d’accueil
+***************************************************************/
+
+.hero {
+    display: grid;
+    align-items: center;
+    position: relative;
+    background: var(--white);
+    max-width: none;
+    width: 100%;
+    padding: 30px max(32px,calc((100vw - 1160px)/2));
+    grid-template-columns: minmax(0,47fr) minmax(0,53fr);
+    gap: 15px;
+    min-height: 495px;
+    border-radius: 0 0 8% 8% / 0 0 35px 35px;
+    overflow: hidden;
+}
+
+.hero-copy {
+    position: relative;
+    padding: 20px 0 30px 10px;
+    padding-left: 0;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 21px;
+    line-height: 1.35;
+    max-width: 450px;
+    margin-bottom: 27px;
+    color: var(--ink);
+}
+
+.hero-image {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 70px 30px 80px 45px;
+    transform: none;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.actions .textlink {
+    color: var(--ink);
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(40px,4.6vw,62px);
+}
+
+.hero h1 em {
+    color: var(--pink-strong);
+}
+
+.hero .textlink {
+    border: 0;
+    border-bottom: 1px solid var(--pink);
+    border-radius: 0;
+    padding: 3px 0;
+    background: transparent;
+}
+
+.hero-splash {
+    display: block;
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
+    margin: 0 0 4px -8px;
+    pointer-events: none;
+    transform: rotate(12deg);
+}
+
+/***************************************************************
+Publics et icônes
+***************************************************************/
+
+.audiences {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 64px);
+    max-width: 1160px;
+    margin-top: 22px;
+    background: var(--cyan);
+    color: var(--ink);
+    border-radius: 35px;
+    padding: 23px 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.audiences span {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    font-size: 25px;
+}
+
+.audiences span+span {
+    border-left: 1px solid var(--border);
+    padding-left: 45px;
+    border-color: var(--border-on-color);
+}
+
+.audiences b {
+    font-size: 16px;
+}
+
+.audiences svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/***************************************************************
+Cartes des trois univers
+***************************************************************/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 23px;
+}
+
+.cards article {
+    overflow: hidden;
+    box-shadow: none;
+    border-radius: 23px;
+    background: var(--pink);
+    color: var(--ink);
+}
+
+.cards img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1.5;
+}
+
+.cards article>div {
+    padding: 22px 24px 25px;
+}
+
+.cards p {
+    margin: 0 0 13px;
+    color: inherit;
+}
+
+.cards article:nth-child(2) {
+    background: var(--cyan);
+    color: var(--ink);
+}
+
+.cards article:nth-child(3) {
+    background: var(--green);
+    color: var(--ink);
+}
+
+.locations-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/***************************************************************
+Événements
+***************************************************************/
+
+.occasions {
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.occasions a {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    background: var(--surface-blue);
+    border-radius: 23px;
+    min-height: 125px;
+}
+
+.occasions a:nth-child(2n) {
+    background: var(--surface-blue);
+    border-radius: 23px;
+    min-height: 125px;
+}
+
+.occasions a:nth-child(3) {
+    background: var(--surface-blue);
+    border-radius: 23px;
+    min-height: 125px;
+}
+
+.occasions span {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: var(--pink-strong);
+}
+
+.occasions a:hover {
+    box-shadow: 0 0 0 2px var(--pink);
+}
+
+.events {
+    max-width: none;
+    width: 100%;
+    padding: 45px max(32px,calc((100vw - 1160px)/2)) 40px;
+    background: var(--white);
+    margin-top: 35px;
+    border-radius: 55% 12% 8% 8% / 25px 20px 20px 20px;
+}
+
+.occasions a:nth-child(2) span {
+    color: var(--cyan);
+}
+
+.occasions a:nth-child(3) span {
+    color: var(--yellow);
+}
+
+.occasions a:nth-child(4) span {
+    color: var(--green);
+}
+
+/***************************************************************
+Adaptations : @media(max-width:1000px)
+***************************************************************/
+
+@media(max-width:1000px) {
+    .hero-image {
+        height: 420px;
+    }
+
+    .actions {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .audiences span+span {
+        padding-left: 25px;
+    }
+
+    .audiences b {
+        font-size: 14px;
+    }
+
+    .audiences span {
+        gap: 10px;
+    }
+
+    .cards h3 {
+        font-size: 23px;
+    }
+
+}
+
+/***************************************************************
+Adaptations : @media(max-width:720px)
+***************************************************************/
+
+@media(max-width:720px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        padding: 20px 18px 30px;
+        gap: 15px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .hero-copy {
+        padding: 12px 0 20px;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        height: auto;
+        object-fit: cover;
+        border-radius: 35px 12px 35px 15px;
+        transform: none;
+        border-width: 5px;
+        aspect-ratio: 1.44;
+    }
+
+    .actions {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero .actions {
+        gap: 15px;
+    }
+
+    .hero .textlink {
+        font-size: 14px;
+    }
+
+    .hero-splash {
+        width: 47px;
+        height: 47px;
+        margin-bottom: 7px;
+    }
+
+    .audiences {
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 36px);
+        padding: 22px 18px;
+        gap: 14px;
+        border-radius: 25px;
+    }
+
+    .audiences span+span {
+        border: 0;
+        padding: 0;
+    }
+
+    .audiences b {
+        font-size: 16px;
+    }
+
+    .audiences span {
+        width: 240px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .cards article {
+        grid-template-columns: 40% 60%;
+        display: block;
+        color: var(--ink);
+    }
+
+    .cards img {
+        object-fit: cover;
+        height: auto;
+        aspect-ratio: 1.7;
+    }
+
+    .cards article>div {
+        padding: 17px;
+    }
+
+    .cards h3 {
+        font-size: 22px;
+    }
+
+    .cards p {
+        font-size: 15px;
+    }
+
+    .occasions {
+        gap: 13px;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .events {
+        padding: 35px 18px;
+        border-radius: 25px;
+    }
+
+    .occasions a {
+        min-height: 115px;
+    }
+
+}
+
+/***************************************************************
+Adaptations : @media(max-width:400px)
+***************************************************************/
+
+@media(max-width:400px) {
+    .cards article {
+        grid-template-columns: 1fr;
+        color: var(--ink);
+    }
+
+    .cards img {
+        aspect-ratio: 1.7;
+        width: 100%;
+    }
+
+    .actions .textlink {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+}
+
