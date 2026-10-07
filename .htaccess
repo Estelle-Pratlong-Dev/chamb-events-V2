@@ -2,6 +2,11 @@
 # Le site est installé à la racine du domaine.
 ErrorDocument 404 /404.php
 
+# Affiche notre page 404 pour les fichiers PHP inexistants.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule \.php$ /404.php [L]
+
 # Adresses standard des fichiers SEO, générés depuis config/site.php.
 RewriteEngine On
 RewriteRule ^robots\.txt$ robots.php [L]
